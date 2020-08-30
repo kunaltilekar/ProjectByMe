@@ -1,0 +1,22 @@
+class FunctionOverloading
+{
+public void addition(int a,int b){
+System.out.println("Addition is :"+(a+b));
+}
+public void addition(int a,int b,int c){
+System.out.println("Addition of 3 number :"+(a+b+c));
+}
+public void addition(int a,int b,float c){
+System.out.println("Addition of 3 number :"+(a+b+c));
+}
+public void addition(float a,float b,float c){
+System.out.println("Addition of 3 number :"+(a+b+c));
+}
+public static void main(String args[]){
+FunctionOverloading fo=new FunctionOverloading();
+fo.addition(3,5);
+fo.addition(1,2,3);
+fo.addition(1,2,3.6f);
+fo.addition(1.3f,4.7f,4.5f);
+}
+}
